@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .logo{
+    background-color: rgb(255, 127, 127);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    animation:logorotate 5s linear infinite;
+    transform-origin: center;
+   
+}
+
+@keyframes logorotate{
+    0%{
+      
+      transform:rotate(0deg) ;
+    }
+    100%{
+        
+        transform: rotate(360deg);
+    }
+    
+    } */
+
+
+ .redbg{
+    height: 20px;
+    background-color: brown;
+    position: fixed;
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 20%;
+
+}
+#result{
+    padding:0px 0px 50px 0px;
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes logorotate{
+0%{
+  
+  transform:rotate(0deg) ;
+}
+100%{
+    
+    transform: rotate(360deg);
+}
+
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation:logorotate 5s linear infinite      ;
+    transform-origin: center;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+.home a{
+    color: white;
+    text-decoration: none;
+  
+}
+.searchlogo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+
+
+@media (max-width:1117px) {
+    .navbar{
+        height: 100px;
+        
+    }
+    .logo img{
+        width: 110px;
+        height: 110px;
+        
+    }
+    .home a{
+        font-size: 15px;
+      
+    }
+
+    
+} 
+
+@media (max-width:1100px) {
+    .navbar{
+        height: 90px;
+        
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .home a{
+        font-size: 15px;
+      
+    }
+
+    
+} 
+@media (max-width:1058px) {
+    .navbar{
+        height: 80px;
+        
+    }
+    .logo img{
+        width: 90px;
+        height: 90px;
+       
+        
+    }
+    .home a{
+        font-size: 13px;
+      
+    }
+
+    
+} 
+@media (max-width:940px) {
+    .navbar{
+        height: 70px;
+        
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+      
+        
+    }
+    .home a{
+        font-size: 10px;
+      
+    }
+
+    
+} 
+@media (max-width:800px) {
+
+    
+    .searchlogo{
+        display: none;
+    }
+    .home{
+        position: absolute;
+        right: 0;
+        top: 4.8vh;
+        width: 100%;
+        height: 95vh; 
+         background-color: black; 
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: center;
+        flex-direction: column;
+        left: -100%; 
+        transition: all 0.5s ease-in;
+
+    }
+   .nav-active{
+        left: 0 !important;
+    }
+    .navbar .boxs{
+        display: block;
+        cursor: pointer;
+    }
+ 
+    .navbar{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .logo img{
+        width: 70px;
+        height: 70px;
+        
+    }
+    .home a{
+        font-size: 10px;
+      
+    }
+    .boxs{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: block;
+        padding-top: 20px;
+    }
+    
+    
+    .boxs div{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    
+    .toggle .box1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .box2{
+        opacity: 0;
+    }
+  
+    .toggle .box3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+  
+  
+
+
+}
+
+.personalDetails{
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(to right, #0f0113, #da04ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 180px 0px 0px 60px;
+    
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   gap: 40px;
+   padding: 40px 0px;
+}
+.form1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.box{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    text-align: start;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+.text{
+    font-size: 30px;
+    color: #f5ea50;
+}
+.personalDetails h1{
+    font-size: 40px;
+    color: #f5ea50;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #f5ea50;
+    font-size: 20px;
+    cursor: pointer;
+} 
